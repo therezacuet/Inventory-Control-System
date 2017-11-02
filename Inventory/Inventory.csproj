@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EF99AB6-92C9-4658-9C5C-4DAA2F5ED3B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventory</RootNamespace>
+    <AssemblyName>Inventory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fevicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategoryForm.Designer.cs">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPurchaseForm.Designer.cs">
+      <DependentUpon>AddPurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSalesForm.Designer.cs">
+      <DependentUpon>AddSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllReportForm.Designer.cs">
+      <DependentUpon>AllReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditInfoForm.Designer.cs">
+      <DependentUpon>CreditInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditInvoiceForm.Designer.cs">
+      <DependentUpon>CreditInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditReportInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditReportInvoiceForm.Designer.cs">
+      <DependentUpon>CreditReportInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebitInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebitInfoForm.Designer.cs">
+      <DependentUpon>DebitInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebitInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebitInvoiceForm.Designer.cs">
+      <DependentUpon>DebitInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebitReportInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebitReportInvoiceForm.Designer.cs">
+      <DependentUpon>DebitReportInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialReportInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialReportInvoiceForm.Designer.cs">
+      <DependentUpon>FinancialReportInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PInvoiceForm.Designer.cs">
+      <DependentUpon>PInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseReportInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReportInvoiceForm.Designer.cs">
+      <DependentUpon>PurchaseReportInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesInvoiceForm.Designer.cs">
+      <DependentUpon>SalesInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReportInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReportInvoice.Designer.cs">
+      <DependentUpon>SalesReportInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomerForm.Designer.cs">
+      <DependentUpon>ViewCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPurchaseForm.Designer.cs">
+      <DependentUpon>ViewPurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSalesForm.Designer.cs">
+      <DependentUpon>ViewSalesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockAvail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStockAvail.Designer.cs">
+      <DependentUpon>ViewStockAvail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStockForm.Designer.cs">
+      <DependentUpon>ViewStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSupplierForm.Designer.cs">
+      <DependentUpon>ViewSupplierForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCategoryForm.resx">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPurchaseForm.resx">
+      <DependentUpon>AddPurchaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSalesForm.resx">
+      <DependentUpon>AddSalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllReportForm.resx">
+      <DependentUpon>AllReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditInfoForm.resx">
+      <DependentUpon>CreditInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditInvoiceForm.resx">
+      <DependentUpon>CreditInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditReportInvoiceForm.resx">
+      <DependentUpon>CreditReportInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebitInfoForm.resx">
+      <DependentUpon>DebitInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebitInvoiceForm.resx">
+      <DependentUpon>DebitInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebitReportInvoiceForm.resx">
+      <DependentUpon>DebitReportInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialReportInvoiceForm.resx">
+      <DependentUpon>FinancialReportInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PInvoiceForm.resx">
+      <DependentUpon>PInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseReportInvoiceForm.resx">
+      <DependentUpon>PurchaseReportInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesInvoiceForm.resx">
+      <DependentUpon>SalesInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReportInvoice.resx">
+      <DependentUpon>SalesReportInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomerForm.resx">
+      <DependentUpon>ViewCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPurchaseForm.resx">
+      <DependentUpon>ViewPurchaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSalesForm.resx">
+      <DependentUpon>ViewSalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStockAvail.resx">
+      <DependentUpon>ViewStockAvail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStockForm.resx">
+      <DependentUpon>ViewStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSupplierForm.resx">
+      <DependentUpon>ViewSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock in icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Billing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posnic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fevicon.ico" />
+    <None Include="Resources\uu.png" />
+    <None Include="Resources\Untitled-11.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\bb.png" />
+    <None Include="Resources\profile_background.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\addsales.png" />
+    <None Include="Resources\reportdashboard1.png" />
+    <None Include="Resources\creditinfodash.png" />
+    <None Include="Resources\debitinfo.png" />
+    <None Include="Resources\supplierdash.png" />
+    <None Include="Resources\customerdashboard.png" />
+    <None Include="Resources\viewstock1.png" />
+    <None Include="Resources\stockdashboard1.png" />
+    <None Include="Resources\purchaxxxxxsedashboard.png" />
+    <None Include="Resources\purchasedashboard.png" />
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\call-report-icon-3.png" />
+    <None Include="Resources\bul.png" />
+    <None Include="Resources\frid.png" />
+    <None Include="Resources\fridgee.png" />
+    <None Include="Resources\Microwave.png" />
+    <None Include="Resources\fan.png" />
+    <None Include="Resources\fan_PNG14474.png" />
+    <None Include="Resources\integracao.png" />
+    <None Include="Resources\payment-icon-8.png" />
+    <None Include="Resources\79-512.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\stock.png" />
+    <None Include="Resources\purcgase.png" />
+    <None Include="Resources\sell.png" />
+    <None Include="Resources\Basket.png" />
+    <None Include="Resources\Reset2_32x32.png" />
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
